@@ -9,22 +9,23 @@
 <div>{{$post['content']}}</div>
 <br>
 <div>{{$post['excerpt']}}</div>
-<strong>
+<br>
+<div>
     @foreach ($categories as $category)
     @if ($category->id === $post->category_id)
-   Categoria: {{ $category->name}}
+        <strong>Categoria:</strong>
+        <span>{{ $category->name}}</span>
     @endif
     @endforeach
-</strong>
-<span>
-    Tags:
+</div>
+<br>
+<div>
+    <strong>Tags:</strong>
 
         @foreach ($post->tags as $tag)
+            <span>{{$tag->name}}</span>
+        @endforeach
 
-            {{$tag->name}}
-
-            @endforeach
-
-</span>
+</div>
 
 @endsection

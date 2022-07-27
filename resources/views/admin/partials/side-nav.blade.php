@@ -14,10 +14,10 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a  class="nav-link" href="{{route('admin.posts.myIndex')}}">My Post</a>
+                <a  class="nav-link ms-4" href="{{route('admin.posts.myIndex')}}">- My Post</a>
             </li>
             <li class="nav-item">
-                <a  class="nav-link" href="{{route('admin.posts.create')}}">New Post</a>
+                <a  class="nav-link ms-4" href="{{route('admin.posts.create')}}">- New Post</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.users.index') }}">
@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a  class="nav-link" href="#">New Categpry</a>
+                <a  class="nav-link ms-4" href="#">- New Category</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">

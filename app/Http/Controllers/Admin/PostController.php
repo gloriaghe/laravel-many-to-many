@@ -83,18 +83,18 @@ class PostController extends Controller
     public function show(Post $post)
     {
 
-            // $categories = Category::all();
-            // $tags = Tag::all();
+             $categories = Category::all();
+             $tags = Tag::all();
             // $user = User::all();
 
-            return view('admin.posts.show', compact('posts'));
+            // return view('admin.posts.show', compact('post'));
 
-        //     return view('admin.posts.show', [
-        //     'post'          => $post,
-        //     'categories'    => $categories,
-        //     'tags'          => $tags,
+            return view('admin.posts.show', [
+             'post'          => $post,
+             'categories'    => $categories,
+            'tags'          => $tags,
         //     // 'user' => $user
-        // ]);
+         ]);
     }
 
     /**
@@ -146,9 +146,9 @@ class PostController extends Controller
 
         $data = $request->all();
 
-        $post = Post::create($data);
-        $post->tags()->sync($data['tags']);
         $post->update($data);
+        // $post = Post::create($data);
+        $post->tags()->sync($data['tags']);
 
         return redirect()->route('admin.posts.show', ['post' => $post]);
     }

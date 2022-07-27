@@ -25,6 +25,12 @@
                     </a>
                     </td>
                     <td>{{ $post->user->name}}</td>
+                    <td>
+                        @foreach($post->tags as $tag)
+                            <a href="{{ route('admin.tags.show', ['tag' => $tag]) }}">{{ $tag->name }}</a>
+                            @if(!$loop->last) , @endif
+                        @endforeach
+                    </td>
                 </tr>
             @endforeach
         </tbody>
