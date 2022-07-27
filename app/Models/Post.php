@@ -13,16 +13,17 @@ class Post extends Model
     ];
 
     public function category() {
-        return $this->belongsTo('App/Models/Category');
+        return $this->belongsTo('App\Models\Category');
     }
 
     public function tags(){
         return $this->belongsToMany('App\Models\Tag');
     }
 
-    public function user(){
-        return $this->belongsTo('App/Models/User');
+    public function user() { // il belongs to sta dalla parte dell'1 della relazione e il nome deve essere singolare
+        return $this->belongsTo('App\Models\User');
     }
+
 
     //per passare come link lo slug invece che l'id (lo slug deve essere univoco)
     public function getRouteKeyName()

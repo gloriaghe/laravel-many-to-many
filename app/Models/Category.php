@@ -12,7 +12,7 @@ class Category extends Model
     public $timestamps = false;
 
     public function posts() {
-        return $this->hasMany('App/Models/Post');
+        return $this->hasMany('App\Models\Post');
     }
 
     //per passare come link lo slug invece che l'id (lo slug deve essere univoco)
