@@ -40131,8 +40131,8 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\glogh\Downloads\laravel-many-to-many-27luglio\resources\js\front.js */"./resources/js/front.js");
-module.exports = __webpack_require__(/*! C:\Users\glogh\Downloads\laravel-many-to-many-27luglio\resources\sass\back.scss */"./resources/sass/back.scss");
+__webpack_require__(/*! C:\Users\glogh\Music\php\laravel\laravel-many-to-many\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\Users\glogh\Music\php\laravel\laravel-many-to-many\resources\sass\back.scss */"./resources/sass/back.scss");
 
 
 /***/ })

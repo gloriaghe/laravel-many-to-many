@@ -27876,7 +27876,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\glogh\Downloads\laravel-many-to-many-27luglio\resources\js\back.js */"./resources/js/back.js");
+module.exports = __webpack_require__(/*! C:\Users\glogh\Music\php\laravel\laravel-many-to-many\resources\js\back.js */"./resources/js/back.js");
 
 
 /***/ })
