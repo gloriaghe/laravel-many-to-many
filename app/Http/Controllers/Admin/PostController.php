@@ -161,6 +161,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        if (Auth::id() != $post->user_id) abort(401);
+
         $post->delete();
 
         return redirect()->route('admin.posts.index');
